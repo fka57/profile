@@ -1,1 +1,97 @@
-やまだ
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>やまだのページ</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f0f9ff; /* 爽やかな薄い水色 */
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 50px 40px;
+            border-radius: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            max-width: 450px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* アイコンをもっと目立たせる */
+        .icon {
+            font-size: 70px;
+            margin-bottom: 25px;
+            display: block;
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .intro-text {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #444;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .likes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #fff0f6; /* 優しいピンク */
+            color: #d6336c;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85em;
+            border: 1px solid #ffdeeb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon">🌈</div>
+    
+    <p class="intro-text">
+        やまだです！<br>
+        遊びに来てくれてありがとう。
+    </p>
+
+    <p class="description">
+        のんびりした時間と、<br>
+        ちょっとした冒険が大好きです。
+    </p>
+
+    <div class="likes">
+        <span class="tag"># 散歩</span>
+        <span class="tag"># 音楽</span>
+        <span class="tag"># 読書</span>
+        <span class="tag"># 旅</span>
+    </div>
+</div>
+
+</body>
+</html>
